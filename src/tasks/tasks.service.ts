@@ -14,7 +14,7 @@ export class TasksService {
   createTask(createTaskDto: CreateTaskDto): Task {
     const { title, description } = createTaskDto;
     const task: Task = {
-      id: uuid.v1(), // this.tasks.length.toString(),
+      id: this.tasks.length.toString(), //uuid.v1(),
       title: title,
       description: description,
       status: TaskStatus.OPEN,
@@ -29,5 +29,11 @@ export class TasksService {
 
   deleteTask(id: string): void {
     this.tasks = this.tasks.filter((task) => task.id !== id);
+  }
+
+  updateTaskStatus(id: string, status: TaskStatus): Task {
+    const task = this.getTaskById(id);
+    task.status = status;
+    return task;
   }
 }
