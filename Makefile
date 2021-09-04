@@ -6,4 +6,4 @@ postgres:
 
 
 createdb:
-	docker exec -it postgres12 createdb --username=root --owner=root taskmanager
+	docker exec -it postgres12 createdb --username=root --owner=root taskmanagement
