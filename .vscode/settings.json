@@ -6,16 +6,6 @@
             "port": 5432,
             "driver": "PostgreSQL",
             "name": "postgres12",
-            "database": "taskmanager",
-            "username": "root",
-            "password": "secret"
-        },
-        {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5432,
-            "driver": "PostgreSQL",
-            "name": "postgres12",
             "database": "taskmanagement",
             "username": "root",
             "password": "secret"
