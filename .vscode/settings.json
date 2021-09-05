@@ -6,7 +6,7 @@
             "port": 5432,
             "driver": "PostgreSQL",
             "name": "postgres12",
-            "database": "taskmanager",
+            "database": "taskmanagement",
             "username": "root",
             "password": "secret"
         }
