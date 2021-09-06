@@ -8,5 +8,10 @@ postgres:
 createdb:
 	docker exec -it postgres12 createdb --username=root --owner=root taskmanagement
 
+
+dropdb:
+	docker exec -it postgres12 dropdb taskmanagement
+
+
 watch:
 	yarn start:dev
